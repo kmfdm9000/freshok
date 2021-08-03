@@ -10,6 +10,7 @@ body {
     @extend %lato-400;
     display: flex;
     flex-direction: column;
+    color: $dark-500
 }
 
 .main {
