@@ -10,6 +10,7 @@ body {
     @extend %lato-400;
     display: flex;
     flex-direction: column;
+    letter-spacing: 0.4px;
     color: $dark-500
 }
 
@@ -29,4 +30,22 @@ a {
     line-height: 1.2;
     letter-spacing: 0.4px;
     @extend %lato-700;
+}
+
+.title {
+    font-size: 32px;
+    @extend %signika-600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.filter__btn {
+    font-size: 15px;
+    @extend %lato-700;
+    color: $dark-500;
+    text-transform: uppercase;
+}
+
+button {
+    letter-spacing: 0.4px;
 }

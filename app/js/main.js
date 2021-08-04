@@ -5,4 +5,13 @@ $(function () {
         nextArrow: '<button type="button" class="slick-next"><img src="images/icons/arrow-right.svg" alt="стрелка вправо"></button>',
         arrows: true
     })
+
+
+
+
+    var mixer = mixitup('.top-goods__content', {
+        animation: {
+            effectsOut: 'fade translateY(-100%)'
+        }
+    });
 });
