@@ -20,10 +20,11 @@ body {
     color: $dark-900;
     font-size: 14px;
     line-height: 1.4;
-    @extend %lato-400;
+    font-family: $lato;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.03em;
     color: $dark-500;
     background-color: $white;
 }
@@ -43,24 +44,31 @@ a {
     font-size: 13px;
     line-height: 1.2;
     letter-spacing: 0.4px;
-    @extend %lato-700;
+    font-family: $lato;
+    font-weight: 700;
 }
 
 .title {
     font-size: 32px;
-    @extend %signika-600;
+    font-family: $signika;
+    font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
 
 .filter__btn {
     font-size: 15px;
-    @extend %lato-700;
+    font-family: $lato;
+    font-weight: 700;
     color: $dark-500;
     text-transform: uppercase;
     border-bottom: 3px solid transparent;
     transition: border 0.5s;
     letter-spacing: 1.5px;
+
+    &:focus {
+        border-bottom: 3px solid rgba(99, 166, 14, 0.2);
+    }
 
     &:hover {
         border-bottom: 3px solid rgba(99, 166, 14, 0.2);
@@ -70,9 +78,6 @@ a {
         border-bottom: 3px solid rgba(99, 166, 14, 0.2);
     }
 
-    &:focus {
-        border-bottom: 3px solid rgba(99, 166, 14, 0.2);
-    }
 }
 
 button {

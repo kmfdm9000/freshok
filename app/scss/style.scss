@@ -4,9 +4,12 @@
 @import 'libs';
 @import 'global';
 
-.header-top {
-    background-color: $dark-800;
-    text-transform: uppercase;
+.header {
+    &__top {
+
+        background-color: $dark-800;
+        text-transform: uppercase;
+    }
 
     &__inner {
         display: flex;
@@ -37,7 +40,7 @@
         margin-right: 48px;
     }
 
-    &__menu {
+    &__info {
         display: flex;
         align-items: center;
     }
@@ -64,7 +67,8 @@
         color: $green-900;
         border-radius: 6px;
         position: relative;
-        @extend %lato-600;
+        font-family: $lato;
+        font-weight: 600;
         transition: opacity 0.5s, border-radius 0.5s;
 
         &:hover {
@@ -137,9 +141,8 @@
         border-bottom-right-radius: 0;
         border: 0;
         text-indent: 51px;
-        @extend %lato-400;
-
-
+        font-family: $lato;
+        font-weight: 400;
     }
 
     &__search-btn {
@@ -215,7 +218,8 @@
         color: $red-900;
         text-align: center;
         line-height: 18px;
-        @extend %lato-600;
+        font-family: $lato;
+        font-weight: 600;
     }
 }
 
@@ -238,7 +242,8 @@
     }
 
     &__text {
-        @extend %lato-400;
+        font-family: $lato;
+        font-weight: 400;
         color: $white;
         margin-bottom: 18px;
     }
@@ -256,7 +261,8 @@
         border-bottom-right-radius: 0;
         border: 0;
         text-indent: 12px;
-        @extend %lato-400;
+        font-family: $lato;
+        font-weight: 400;
     }
 
     &__email-btn {
@@ -269,7 +275,8 @@
         border-radius: 5px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        @extend %lato-700;
+        font-family: $lato;
+        font-weight: 700;
     }
 
     &__links {
@@ -350,7 +357,8 @@
     }
 
     &__title-text {
-        @extend %signika-700;
+        font-family: $signika;
+        font-weight: 700;
         font-size: 60px;
         line-height: 1.3;
         color: $dark-500;
@@ -364,14 +372,16 @@
     &__text {
         font-size: 16px;
         text-transform: none;
-        @extend %lato-400;
+        font-family: $lato;
+        font-weight: 400;
     }
 
     &__link {
         padding: 12px 24px;
         background-color: $green-900;
         border-radius: 6px;
-        @extend %lato-400;
+        font-family: $lato;
+        font-weight: 400;
         transition: background-color 0.5s, box-shadow 0.5s, color 0.5s;
 
         &:hover {
@@ -386,20 +396,6 @@
 
         &:focus {
             box-shadow: 0px 0px 0px 4px #E0EDCF;
-        }
-    }
-
-    &__item--1 {
-        background-image: url(../images/slider/slider-bg-1.jpg);
-
-    }
-
-    &__item--2 {
-        background-image: url(../images/slider/slider-bg-2.jpg);
-        background-position-y: 72%;
-
-        .top-slider__title {
-            max-width: 824px;
         }
     }
 
@@ -442,7 +438,7 @@
 
 }
 
-.top-goods {
+.top-products {
     .form {
         padding: 50px 0;
     }
@@ -477,12 +473,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        @extend %lato-700;
+        font-family: $lato;
+        font-weight: 700;
         font-size: 16px;
 
         span {
             font-size: 14px;
-            @extend %lato-400;
+            font-family: $lato;
+            font-weight: 400;
         }
     }
 
@@ -508,7 +506,7 @@
 
 }
 
-.top-goods {
+.top-products {
     padding: 72px 0;
     text-align: center;
 
@@ -560,7 +558,8 @@
     }
 
     &__text {
-        @extend %lato-600;
+        font-family: $lato;
+        font-weight: 600;
 
     }
 
@@ -611,7 +610,8 @@
         padding: 12px 24px;
         color: $green-900;
         font-size: 18px;
-        @extend %lato-400;
+        font-family: $lato;
+        font-weight: 400;
         border: 1px solid #63A60E;
         border-radius: 6px;
         background-color: $white;
@@ -689,7 +689,8 @@
     }
 
     &__text {
-        @extend %lato-700;
+        font-family: $lato;
+        font-weight: 700;
         font-size: 12px;
         line-height: 1;
         letter-spacing: 1.2px;
@@ -697,7 +698,8 @@
 
     &__title {
         max-width: 190px;
-        @extend %signika-600;
+        font-family: $signika;
+        font-weight: 600;
         font-size: 30px;
     }
 
@@ -705,7 +707,8 @@
         padding-bottom: 6px;
         color: $dark-500;
         border-bottom: 2px solid #505050;
-        @extend %lato-700;
+        font-family: $lato;
+        font-weight: 700;
         width: fit-content;
     }
 

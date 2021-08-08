@@ -12,42 +12,10 @@ $silver-600: #C1C1C1;
 $silver-100: #F6F6F6;
 $white: #FFFFFF;
 
-%lato-300 {
-    font-family: 'Lato-Light', Tahoma, sans-serif;
-    font-weight: 300;
-}
+$lato: 'Lato',
+Tahoma,
+sans-serif;
 
-%lato-400 {
-    font-family: 'Lato-Regular', Tahoma, sans-serif;
-    font-weight: 400;
-}
-
-%lato-600 {
-    font-family: 'Lato-SemiBold', Tahoma, sans-serif;
-    font-weight: 600;
-}
-
-%lato-700 {
-    font-family: 'Lato-Bold', Tahoma, sans-serif;
-    font-weight: 700;
-}
-
-%signika-300 {
-    font-family: 'Signika-Light', Tahoma, sans-serif;
-    font-weight: 300;
-}
-
-%signika-400 {
-    font-family: 'Signika-Regular', Tahoma, sans-serif;
-    font-weight: 400;
-}
-
-%signika-600 {
-    font-family: 'Signika-SemiBold', Tahoma, sans-serif;
-    font-weight: 600;
-}
-
-%signika-700 {
-    font-family: 'Signika-Bold', Tahoma, sans-serif;
-    font-weight: 700;
-}
+$signika: 'Signika',
+Tahoma,
+sans-serif;
