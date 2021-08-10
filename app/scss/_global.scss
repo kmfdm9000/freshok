@@ -51,33 +51,54 @@ a {
 .title {
     font-size: 32px;
     font-family: $signika;
+    color: $dark-900;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
 
-.filter__btn {
-    font-size: 15px;
-    font-family: $lato;
-    font-weight: 700;
-    color: $dark-500;
-    text-transform: uppercase;
-    border-bottom: 3px solid transparent;
-    transition: border 0.5s;
-    letter-spacing: 0.03em;
+.filter-products {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 51px;
 
-    &:focus {
-        border-bottom: 3px solid rgba(99, 166, 14, 0.2);
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+
     }
 
-    &:hover {
-        border-bottom: 3px solid rgba(99, 166, 14, 0.2);
-    }
+    &__btn {
+        font-size: 15px;
+        font-family: $lato;
+        font-weight: 700;
+        color: $dark-500;
+        text-transform: uppercase;
+        border-bottom: 3px solid transparent;
+        transition: border 0.5s;
+        letter-spacing: 0.03em;
 
-    &:active {
-        border-bottom: 3px solid rgba(99, 166, 14, 0.2);
-    }
+        &:focus {
+            border-bottom: 3px solid rgba(99, 166, 14, 0.2);
+        }
 
+        &:hover {
+            border-bottom: 3px solid rgba(99, 166, 14, 0.2);
+        }
+
+        &:active {
+            border-bottom: 3px solid rgba(99, 166, 14, 0.2);
+        }
+
+
+
+    }
+}
+
+.mixitup-control-active {
+    border-bottom: 3px solid rgba(99, 166, 14, 0.2);
 }
 
 button {
@@ -99,7 +120,7 @@ button {
         background-position: center;
         width: 44px;
         height: 44px;
-        top: 0;
+        top: 4px;
         left: 0;
         border-radius: 3px;
         transition: background-color 0.5s;
@@ -114,6 +135,7 @@ button {
         border: 0;
         text-indent: 51px;
         font-family: $lato;
+        letter-spacing: 0.03em;
         font-weight: 400;
     }
 

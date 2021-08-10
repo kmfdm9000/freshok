@@ -9,7 +9,7 @@ $(function () {
 
 
 
-    var mixer = mixitup('.top-goods__content', {
+    var mixer = mixitup('.top-products__content', {
         animation: {
             effectsOut: 'fade translateY(-100%)'
         }
