@@ -281,24 +281,26 @@
                 <h2 class="title top-products__title">
                     Топовые товары
                 </h2>
-                <ul class="filter-products">
+                <ul class="filter-products" data-ref="mixer1">
                     <li class="filter-products__item">
-                        <button class="filter-products__btn" type="button" data-filter="all">Все
+                        <button class="filter-products__products" type="button" data-filter="all">Все
                             товары</button>
                     </li>
                     <li class="filter-products__item">
-                        <button class="filter-products__btn" type="button"
+                        <button class="filter-products__products" type="button"
                             data-filter=".category-fruits">Фрукты</button>
                     </li>
                     <li class="filter-products__item">
-                        <button class="filter-products__btn" type="button" data-filter=".category-vegs">Овощи</button>
+                        <button class="filter-products__products" type="button"
+                            data-filter=".category-vegs">Овощи</button>
                     </li>
                     <li class="filter-products__item">
-                        <button class="filter-products__btn" type="button"
+                        <button class="filter-products__products" type="button"
                             data-filter=".category-drinks">Напитки</button>
                     </li>
                     <li class="filter-products__item">
-                        <button class="filter-products__btn" type="button" data-filter=".category-groc">Бакалея</button>
+                        <button class="filter-products__products" type="button"
+                            data-filter=".category-groc">Бакалея</button>
                     </li>
                 </ul>
                 <ul class="top-products__content">
@@ -661,20 +663,21 @@
                 <h2 class="title sales__title">
                     Акции
                 </h2>
-                <ul class="filter-products">
+                <ul class="filter-products" data-ref="mixer2">
                     <li class="filter-products__item">
-                        <button class="filter-products__btn" type="button" data-filter="all">Все
+                        <button class="filter-products__sales" type="button" data-filter="all">Все
                             товары</button>
                     </li>
                     <li class="filter-products__item">
-                        <button class="filter-products__btn" type="button" data-filter=".category-new">Новинки</button>
+                        <button class="filter-products__sales" type="button"
+                            data-filter=".category-new">Новинки</button>
                     </li>
                     <li class="filter-products__item">
-                        <button class="filter-products__btn" type="button" data-filter=".category-hit">Хиты</button>
+                        <button class="filter-products__sales" type="button" data-filter=".category-hit">Хиты</button>
                     </li>
                 </ul>
                 <ul class="sales__content">
-                    <li class="sales__item">
+                    <li class="sales__item mix category-new">
                         <article class="sales-card">
                             <a class="sales-card__link" href="#">
                                 <div class="sales-card__badge sales-card__badge--new">Новинка</div>
@@ -710,7 +713,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="sales__item">
+                    <li class="sales__item mix category-new">
                         <article class="sales-card">
                             <a class="sales-card__link" href="#">
                                 <div class="sales-card__badge sales-card__badge--new">Новинка</div>
@@ -746,7 +749,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="sales__item">
+                    <li class="sales__item mix category-new">
                         <article class="sales-card">
                             <a class="sales-card__link" href="#">
                                 <div class="sales-card__badge sales-card__badge--new">Новинка</div>
@@ -782,7 +785,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="sales__item">
+                    <li class="sales__item mix category-new">
                         <article class="sales-card">
                             <a class="sales-card__link" href="#">
                                 <div class="sales-card__badge sales-card__badge--new">Новинка</div>
@@ -818,7 +821,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="sales__item">
+                    <li class="sales__item mix category-new">
                         <article class="sales-card">
                             <a class="sales-card__link" href="#">
                                 <div class="sales-card__badge sales-card__badge--new">Новинка</div>
@@ -854,7 +857,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="sales__item">
+                    <li class="sales__item mix category-hit">
                         <article class="sales-card">
                             <a class="sales-card__link" href="#">
                                 <div class="sales-card__badge sales-card__badge--hit">Хит</div>
@@ -890,7 +893,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="sales__item">
+                    <li class="sales__item mix category-hit">
                         <article class="sales-card">
                             <a class="sales-card__link" href="#">
                                 <div class="sales-card__badge sales-card__badge--hit">Хит</div>
@@ -926,7 +929,7 @@
                             </a>
                         </article>
                     </li>
-                    <li class="sales__item">
+                    <li class="sales__item mix category-hit">
                         <article class="sales-card">
                             <a class="sales-card__link" href="#">
                                 <div class="sales-card__badge sales-card__badge--hit">Хит</div>
@@ -1313,7 +1316,8 @@
                             <img src="images/news/news1507.jpg" alt="Новость 15 июля" width="410" height="240">
                             <div class="news__text">
                                 <p>
-                                    Событие этого лета: распродажа сезонных фруктов в онлайн-маркете ФрешОК. Торопись, пока всё не разобрали!
+                                    Событие этого лета: распродажа сезонных фруктов в онлайн-маркете ФрешОК. Торопись,
+                                    пока всё не разобрали!
                                 </p>
                             </div>
                         </a>

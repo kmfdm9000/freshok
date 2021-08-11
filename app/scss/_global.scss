@@ -65,14 +65,14 @@ a {
     margin-bottom: 50px;
 
     &__item {
-
         &:not(:last-child) {
             margin-right: 24px;
         }
 
     }
 
-    &__btn {
+    &__products,
+    &__sales {
         font-size: 15px;
         font-family: $lato;
         font-weight: 700;
@@ -81,6 +81,10 @@ a {
         border-bottom: 3px solid transparent;
         transition: border 0.5s;
         letter-spacing: 0.03em;
+
+        &:hover {
+            border-bottom: 3px solid rgba(99, 166, 14, 0.2);
+        }
     }
 }
 

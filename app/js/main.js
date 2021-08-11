@@ -11,15 +11,20 @@ $(function () {
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         arrows: false
     })
+    var containerEl1 = document.querySelector('[data-ref="mixer1"]');
+    var containerEl2 = document.querySelector('[data-ref="mixer2"]');
+    var mixer1 = mixitup(containerEl1, {
+        animation: {
+            effectsOut: 'fade translateY(-100%)'
+        }
+    });
 
 
-
-
-    var mixer = mixitup('.top-products__content', {
+    var mixer2 = mixitup(containerEl2, {
         animation: {
             effectsOut: 'fade translateY(-100%)'
         }
