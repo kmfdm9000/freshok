@@ -6,6 +6,16 @@ $(function () {
         arrows: true
     })
 
+    $('.brands-slider').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false
+    })
+
 
 
 
