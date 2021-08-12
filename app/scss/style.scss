@@ -49,6 +49,12 @@
     }
 
     &__info-list {
+        transition: opacity 0.5s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
         &:not(:last-child) {
             margin-right: 24px;
         }
@@ -1042,6 +1048,11 @@
         font-weight: 400;
         line-height: 1.4;
         font-size: 14px;
+        transition: opacity 0.5s;
+
+        &:hover {
+            opacity: 0.5;
+        }
     }
 
     &__phone-text {
@@ -1057,6 +1068,11 @@
         font-family: $lato;
         font-size: 14px;
         letter-spacing: normal;
+        transition: opacity 0.5s;
+
+        &:hover {
+            opacity: 0.5;
+        }
     }
 
     &__address {
@@ -1067,6 +1083,11 @@
         font-family: $lato;
         font-size: 14px;
         margin-bottom: 18px;
+        transition: opacity 0.5s;
+
+        &:hover {
+            opacity: 0.5;
+        }
     }
 
     &__contacts {
@@ -1116,6 +1137,12 @@
     }
 
     &__pay-list {
+        transition: opacity 0.5s;
+
+        &:hover {
+            opacity: 0.5;
+        }
+
         &:not(:last-child) {
             margin-right: 24px;
         }
