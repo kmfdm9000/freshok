@@ -6,6 +6,9 @@ $(function () {
         arrows: true
     })
 
+
+    $('.select-style, .cart-window__input').styler();
+
     $('.brands-slider').slick({
         dots: false,
         infinite: true,
@@ -25,10 +28,7 @@ $(function () {
             effectsOut: 'fade translateY(-100%)'
         }
     };
-    
+
     var mixer1 = mixitup(containerEl1, config);
     var mixer2 = mixitup(containerEl2, config);
 });
-
-
- 

@@ -75,6 +75,44 @@
     }
 
     &__catalog {
+        position: relative;
+
+        &:hover {
+            .header__catalog-menu {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+            }
+        }
+    }
+
+    &__catalog-menu {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        min-width: 240px;
+        z-index: 2;
+        transition: all 0.5s;
+    }
+
+    &__catalog-list {
+
+        padding: 15px 0 15px 24px;
+        color: #000;
+        font-family: $lato;
+        font-weight: 400;
+        font-size: 16px;
+        border: 1px solid rgba(193, 193, 193, 0.3);
+        transition: all 0.5s;
+
+        &:hover {
+            border-left: 3px solid $green-900;
+            color: $green-900;
+        }
+    }
+
+    &__catalog-btn {
         height: 50px;
         padding: 15px 48px 15px 61px;
         background-color: $white;
@@ -90,7 +128,10 @@
             opacity: 0.7;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
+
         }
+
+
 
         &:active {
             opacity: 0.7;
@@ -121,6 +162,8 @@
         }
     }
 
+
+
     &__form {
         margin-right: 32px;
         position: relative;
@@ -140,11 +183,17 @@
             border-radius: 3px;
             transition: background-color 0.5s;
         }
+
+
     }
 
-    &__input {
-        text-indent: 51px;
+    .form {
+        &__input {
+            text-indent: 51px;
+        }
     }
+
+
 
     &__btn {
         padding: 15px 52px;
@@ -192,7 +241,7 @@
         }
     }
 
-    &__cart {
+    &__cart-btn {
         transition: background-color 0.5s;
         padding: 9px 8px 10px 10px;
         position: relative;
@@ -330,7 +379,9 @@
     }
 
     &__item {
+        max-width: 201px;
         position: relative;
+
 
         &:not(:last-child) {
             margin-right: 122px;
@@ -368,6 +419,7 @@
         font-weight: 400;
         letter-spacing: normal;
         line-height: 1.4;
+        @include line-clamp(14, 1.4, 1);
     }
 
 }
@@ -1004,16 +1056,19 @@
         align-items: flex-end;
     }
 
-    &__input {
-        width: 182px;
-        height: 40px;
-        border-radius: 5px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        border: 0;
-        text-indent: 12px;
-        font-family: $lato;
-        font-weight: 400;
+    .form {
+
+        &__input {
+            width: 182px;
+            height: 40px;
+            border-radius: 5px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border: 0;
+            text-indent: 12px;
+            font-family: $lato;
+            font-weight: 400;
+        }
     }
 
     &__btn {
@@ -1043,12 +1098,14 @@
     }
 
     &__link {
+        max-width: 122px;
         letter-spacing: normal;
         font-family: $lato;
         font-weight: 400;
         line-height: 1.4;
         font-size: 14px;
         transition: opacity 0.5s;
+        @include line-clamp(14, 1.4, 1);
 
         &:hover {
             opacity: 0.5;
