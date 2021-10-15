@@ -139,30 +139,64 @@
                                 <span class="header__num">12</span>
                             </button>
 
-                            <div class="cart-window">
-                                <div class="cart-window__top">
-                                    <div class="cart-window__top-content">
-                                        <div class="cart-window__title">Корзина</div>
-                                        <button class="cart-window__reset-btn">очистить корзину</button>
-                                    </div>
-                                    <button class="cart-window__close-btn"></button>
-                                </div>
-                                <div class="cart-window__content">
-                                    <ul class="cart-window__items">
-                                        <li class="cart-window__item">
-                                            <img class="cart-window__img" src="images/cart/pineapple.jpg" alt="Ананас">
-                                            <div class="cart-window__text">
-                                                <h3 class="cart-window__title">Ананас</h3>
-                                                <p class="cart-window__price">999₽ </p>
-                                            </div>
-                                            <input class="cart-window__input" type="number">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </nav>
+            </div>
+        </div>
+        <div class="bg-black"></div>
+        <div class="cart-window">
+            <div class="cart-window__top">
+                <div class="cart-window__top-content">
+                    <div class="cart-window__top-content-title">Корзина</div>
+                    <button class="cart-window__reset-btn">очистить корзину</button>
+                </div>
+                <button class="cart-window__close-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.4069 12.0066L23.6947 1.7188C24.0917 1.33532 24.1028 0.702587 23.7193 0.305521C23.3358 -0.0915446 22.7031 -0.102555 22.306 0.280924C22.2977 0.288948 22.2895 0.297147 22.2814 0.305521L11.9935 10.5933L1.70569 0.305463C1.30863 -0.0780163 0.675896 -0.0670062 0.292417 0.33006C-0.0816925 0.717404 -0.0816925 1.33145 0.292417 1.7188L10.5802 12.0066L0.292417 22.2944C-0.0977977 22.6847 -0.0977977 23.3174 0.292417 23.7077C0.68269 24.0979 1.31542 24.0979 1.70569 23.7077L11.9935 13.4199L22.2813 23.7077C22.6784 24.0912 23.3111 24.0802 23.6946 23.6831C24.0687 23.2958 24.0687 22.6817 23.6946 22.2944L13.4069 12.0066Z" fill="#31352B"/>
+                        </svg>
+                        
+                </button>
+            </div>
+            <div class="cart-window__content">
+                <ul class="cart-window__items">
+                    <li class="cart-window__item">
+                        <div class="cart-window__item-info">
+                            <img class="cart-window__img" src="images/cart/pineapple.jpg" alt="Ананас">
+                            <div class="cart-window__text">
+                                <h3 class="cart-window__title">Ананас, 1кг</h3>
+                                <p class="cart-window__price">999<span>₽</span>  </p>
+                            </div>
+                        </div>
+                        <div class="cart-window__item-price">
+                            <input class="cart-window__input" type="number" value="1" min="1">
+                            <p class="cart-window__price-full">1998<span>₽</span> </p>
+                        </div>
+                    </li>
+                    <li class="cart-window__item">
+                        <div class="cart-window__item-info">
+                            <img class="cart-window__img" src="images/cart/pineapple.jpg" alt="Ананас">
+                            <div class="cart-window__text">
+                                <h3 class="cart-window__title">Ананас, 1кг</h3>
+                                <p class="cart-window__price">999<span>₽</span>  </p>
+                            </div>
+                        </div>
+                        <div class="cart-window__item-price">
+                            <input class="cart-window__input" type="number" value="1" min="1">
+                            <p class="cart-window__price-full">1998<span>₽</span> </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cart-window__bottom">
+                <div class="cart-window__bottom-text">
+                    <h3 class="cart-window__bottom-title">
+                        Товаров на сумму
+                    </h3>
+                    <p class="cart-window__bottom-price">2038<span>₽</span></p>
+                </div>
+                <div class="cart-window__bottom-btn" type="submit">Оформить заказ</div>
             </div>
         </div>
 

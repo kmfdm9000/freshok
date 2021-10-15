@@ -252,6 +252,13 @@
 
     }
 
+    &__cart {
+        position: relative;
+        overflow: hidden;
+    }
+
+
+
     &__num {
         position: absolute;
         width: 18px;
@@ -267,8 +274,8 @@
         font-family: $lato;
         font-weight: 600;
     }
-}
 
+}
 
 
 
@@ -1013,6 +1020,10 @@
 
 
     }
+}
+
+.top {
+    background-color: $silver-100;
 }
 
 .footer {
