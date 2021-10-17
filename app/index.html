@@ -77,11 +77,27 @@
                     <a class="logo header__logo" href="#">
                         <img class="logo__img" src="images/logo.svg" alt="Логотип" width="200" height="60">
                     </a>
-                    <button class="header__catalog" type="button">Каталог продуктов</button>
+                    <div class="header__catalog">
+                        <button class="header__catalog-btn" type="button">Каталог продуктов</button>
+                        <ul class="header__catalog-menu">
+                            <li class="header__catalog-list">Овощи и фрукты</li>
+                            <li class="header__catalog-list">Бакалея</li>
+                            <li class="header__catalog-list">Молочные продукты</li>
+                            <li class="header__catalog-list">Хлеб</li>
+                            <li class="header__catalog-list">Мясо</li>
+                            <li class="header__catalog-list">Колбаса</li>
+                            <li class="header__catalog-list">Рыба</li>
+                            <li class="header__catalog-list">Алкоголь</li>
+                            <li class="header__catalog-list">Напитки</li>
+                            <li class="header__catalog-list">Торты</li>
+                            <li class="header__catalog-list">Мясо</li>
+                            <li class="header__catalog-list">Чай, кофе</li>
+                        </ul>
+                    </div>
                     <form class="form header__form" action="#">
                         <label class="sr-only">Поиск</label>
-                        <input class="form__input header__input" type="text" placeholder="Найти в магазине ..."
-                            name="search" required>
+                        <input class="form__input" type="search" placeholder="Найти в магазине ..." name="search"
+                            required>
                         <button class="form__btn header__btn" type="submit">Поиск</button>
                     </form>
 
@@ -105,25 +121,82 @@
 
                             <span class="header__num">12</span>
                         </a>
+                        <div class="header__cart">
+                            <button class="header__cart-btn" type="button">
 
-                        <button class="header__cart" type="button">
+                                <svg width="32" height="31" viewBox="0 0 32 31" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M31.7978 4.03875C31.6226 3.81981 31.3574 3.69238 31.0769 3.69238H6.5095L5.8225 0.7155C5.72581 0.296688 5.35287 0 4.92306 0H0.923063C0.413312 0 0 0.413312 0 0.923125C0 1.43294 0.413312 1.84619 0.923063 1.84619H4.18875L8.852 22.0537C8.94863 22.4726 9.32162 22.7692 9.75144 22.7692H28.2461C28.7559 22.7692 29.1692 22.3559 29.1692 21.8462C29.1692 21.3364 28.7559 20.9231 28.2461 20.9231H10.4858L9.77581 17.8462H28.3078C28.7395 17.8462 29.1136 17.5469 29.2083 17.1257L31.9775 4.81806C32.0391 4.54444 31.9729 4.25775 31.7978 4.03875ZM27.5693 16H9.34975L6.93556 5.5385H29.9231L27.5693 16Z"
+                                        fill="white" />
+                                    <path
+                                        d="M13.5384 24C11.6722 24 10.1538 25.5183 10.1538 27.3846C10.1538 29.2509 11.6721 30.7692 13.5384 30.7692C15.4047 30.7692 16.9231 29.2509 16.9231 27.3846C16.9231 25.5183 15.4047 24 13.5384 24ZM13.5384 28.9231C12.6901 28.9231 12 28.2329 12 27.3846C12 26.5363 12.6901 25.8462 13.5384 25.8462C14.3867 25.8462 15.0769 26.5363 15.0769 27.3846C15.0769 28.2329 14.3867 28.9231 13.5384 28.9231Z"
+                                        fill="white" />
+                                    <path
+                                        d="M24.6153 24C22.7491 24 21.2307 25.5183 21.2307 27.3846C21.2307 29.2509 22.749 30.7692 24.6153 30.7692C26.4816 30.7692 28 29.2509 28 27.3846C28 25.5183 26.4817 24 24.6153 24ZM24.6153 28.9231C23.767 28.9231 23.0769 28.233 23.0769 27.3847C23.0769 26.5364 23.767 25.8462 24.6153 25.8462C25.4637 25.8462 26.1538 26.5364 26.1538 27.3847C26.1538 28.233 25.4637 28.9231 24.6153 28.9231Z"
+                                        fill="white" />
+                                </svg>
+                                <span class="header__num">12</span>
+                            </button>
 
-                            <svg width="32" height="31" viewBox="0 0 32 31" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M31.7978 4.03875C31.6226 3.81981 31.3574 3.69238 31.0769 3.69238H6.5095L5.8225 0.7155C5.72581 0.296688 5.35287 0 4.92306 0H0.923063C0.413312 0 0 0.413312 0 0.923125C0 1.43294 0.413312 1.84619 0.923063 1.84619H4.18875L8.852 22.0537C8.94863 22.4726 9.32162 22.7692 9.75144 22.7692H28.2461C28.7559 22.7692 29.1692 22.3559 29.1692 21.8462C29.1692 21.3364 28.7559 20.9231 28.2461 20.9231H10.4858L9.77581 17.8462H28.3078C28.7395 17.8462 29.1136 17.5469 29.2083 17.1257L31.9775 4.81806C32.0391 4.54444 31.9729 4.25775 31.7978 4.03875ZM27.5693 16H9.34975L6.93556 5.5385H29.9231L27.5693 16Z"
-                                    fill="white" />
-                                <path
-                                    d="M13.5384 24C11.6722 24 10.1538 25.5183 10.1538 27.3846C10.1538 29.2509 11.6721 30.7692 13.5384 30.7692C15.4047 30.7692 16.9231 29.2509 16.9231 27.3846C16.9231 25.5183 15.4047 24 13.5384 24ZM13.5384 28.9231C12.6901 28.9231 12 28.2329 12 27.3846C12 26.5363 12.6901 25.8462 13.5384 25.8462C14.3867 25.8462 15.0769 26.5363 15.0769 27.3846C15.0769 28.2329 14.3867 28.9231 13.5384 28.9231Z"
-                                    fill="white" />
-                                <path
-                                    d="M24.6153 24C22.7491 24 21.2307 25.5183 21.2307 27.3846C21.2307 29.2509 22.749 30.7692 24.6153 30.7692C26.4816 30.7692 28 29.2509 28 27.3846C28 25.5183 26.4817 24 24.6153 24ZM24.6153 28.9231C23.767 28.9231 23.0769 28.233 23.0769 27.3847C23.0769 26.5364 23.767 25.8462 24.6153 25.8462C25.4637 25.8462 26.1538 26.5364 26.1538 27.3847C26.1538 28.233 25.4637 28.9231 24.6153 28.9231Z"
-                                    fill="white" />
-                            </svg>
-                            <span class="header__num">12</span>
-                        </button>
+                            
+                        </div>
                     </div>
                 </nav>
+            </div>
+        </div>
+        <div class="bg-black"></div>
+        <div class="cart-window">
+            <div class="cart-window__top">
+                <div class="cart-window__top-content">
+                    <div class="cart-window__top-content-title">Корзина</div>
+                    <button class="cart-window__reset-btn">очистить корзину</button>
+                </div>
+                <button class="cart-window__close-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.4069 12.0066L23.6947 1.7188C24.0917 1.33532 24.1028 0.702587 23.7193 0.305521C23.3358 -0.0915446 22.7031 -0.102555 22.306 0.280924C22.2977 0.288948 22.2895 0.297147 22.2814 0.305521L11.9935 10.5933L1.70569 0.305463C1.30863 -0.0780163 0.675896 -0.0670062 0.292417 0.33006C-0.0816925 0.717404 -0.0816925 1.33145 0.292417 1.7188L10.5802 12.0066L0.292417 22.2944C-0.0977977 22.6847 -0.0977977 23.3174 0.292417 23.7077C0.68269 24.0979 1.31542 24.0979 1.70569 23.7077L11.9935 13.4199L22.2813 23.7077C22.6784 24.0912 23.3111 24.0802 23.6946 23.6831C24.0687 23.2958 24.0687 22.6817 23.6946 22.2944L13.4069 12.0066Z" fill="#31352B"/>
+                        </svg>
+                        
+                </button>
+            </div>
+            <div class="cart-window__content">
+                <ul class="cart-window__items">
+                    <li class="cart-window__item">
+                        <div class="cart-window__item-info">
+                            <img class="cart-window__img" src="images/cart/pineapple.jpg" alt="Ананас">
+                            <div class="cart-window__text">
+                                <h3 class="cart-window__title">Ананас, 1кг</h3>
+                                <p class="cart-window__price">999<span>₽</span>  </p>
+                            </div>
+                        </div>
+                        <div class="cart-window__item-price">
+                            <input class="cart-window__input" type="number" value="1" min="1">
+                            <p class="cart-window__price-full">1998<span>₽</span> </p>
+                        </div>
+                    </li>
+                    <li class="cart-window__item">
+                        <div class="cart-window__item-info">
+                            <img class="cart-window__img" src="images/cart/pineapple.jpg" alt="Ананас">
+                            <div class="cart-window__text">
+                                <h3 class="cart-window__title">Ананас, 1кг</h3>
+                                <p class="cart-window__price">999<span>₽</span>  </p>
+                            </div>
+                        </div>
+                        <div class="cart-window__item-price">
+                            <input class="cart-window__input" type="number" value="1" min="1">
+                            <p class="cart-window__price-full">1998<span>₽</span> </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cart-window__bottom">
+                <div class="cart-window__bottom-text">
+                    <h3 class="cart-window__bottom-title">
+                        Товаров на сумму
+                    </h3>
+                    <p class="cart-window__bottom-price">2038<span>₽</span></p>
+                </div>
+                <div class="cart-window__bottom-btn" type="submit">Оформить заказ</div>
             </div>
         </div>
 
@@ -139,9 +212,9 @@
                             <div class="top-slider__content-inner">
                                 <div class="top-slider__info">
                                     <h3 class="top-slider__title">
-                                        Свежачок вам в хату
+                                        Свежачок вам в хату<br>
                                         <span class="top-slider__subtitle">
-                                            <br>Скидка -50%
+                                            Скидка -50%
                                         </span>
                                     </h3>
                                     <div class="top-slider__text">
@@ -166,9 +239,9 @@
                                 <div class="top-slider__info">
                                     <div class="top-slider__title">
                                         <h3 class="top-slider__title-text">
-                                            Накрути себе томатов
+                                            Накрути себе томатов<br>
                                             <span class="top-slider__subtitle">
-                                                <br>Акция: 3 кг по цене 1
+                                                Акция: 3 кг по цене 1
                                             </span>
                                             <p class="top-slider__text">
                                                 Только с 12 по 15 июля скидка на домашние помидорчики
@@ -189,9 +262,9 @@
                                 <div class="top-slider__info">
                                     <div class="top-slider__title">
                                         <h3 class="top-slider__title-text">
-                                            Пусть остальные <br> позеленеют от зависти
+                                            Пусть остальные <br> позеленеют от зависти<br>
                                             <span class="top-slider__subtitle">
-                                                <br>Распродажа зелени
+                                                Распродажа зелени
                                             </span>
                                         </h3>
                                     </div>
@@ -637,21 +710,24 @@
                 <div class="suggestions">
                     <ul class="suggestions__items">
                         <li class="suggestions__item-list">
-                            <div class="suggestions__item suggestions__item--fruits" style="background-image: url('../images/sales/sales-1.jpg');">
+                            <div class="suggestions__item suggestions__item--fruits"
+                                style="background-image: url('../images/sales/sales-1.jpg');">
                                 <p class="suggestions__text">Свежайшие фрукты</p>
                                 <h3 class="suggestions__title">Начни фруктовое лето всего от 99 ₽ </h3>
                                 <a class="suggestions__link" href="#">Перейти к покупкам</a>
                             </div>
                         </li>
                         <li class="suggestions__item-list">
-                            <div class="suggestions__item suggestions__item--vegs" style="background-image: url('../images/sales/sales-2.jpg');">
+                            <div class="suggestions__item suggestions__item--vegs"
+                                style="background-image: url('../images/sales/sales-2.jpg');">
                                 <p class="suggestions__text">Сезонная распродажа</p>
                                 <h3 class="suggestions__title">Овощепад до -50% </h3>
                                 <a class="suggestions__link" href="#">Перейти к покупкам</a>
                             </div>
                         </li>
                         <li class="suggestions__item-list">
-                            <div class="suggestions__item suggestions__item--bread" style="background-image: url('../images/sales/sales-3.jpg');">
+                            <div class="suggestions__item suggestions__item--bread"
+                                style="background-image: url('../images/sales/sales-3.jpg');">
                                 <p class="suggestions__text">Ням-ням</p>
                                 <h3 class="suggestions__title">Свежий хлебчик </h3>
                                 <a class="suggestions__link" href="#">Перейти к покупкам</a>
@@ -1370,8 +1446,8 @@
                     <form class="form footer__form" action="">
                         <label class="footer__label" for="#">Следите за нашими акциями
                             <div class="footer__label-inner">
-                                <input class="form__input footer__input" required type="email"
-                                    placeholder="email@email.com" name="email">
+                                <input class="form__input" required type="email" placeholder="email@email.com"
+                                    name="email">
                                 <button class="button form__btn footer__btn" type="submit">Подписаться</button>
                             </div>
                         </label>
@@ -1409,12 +1485,12 @@
                         </ul>
                     </nav>
                     <div class="footer__contacts">
-                            <a class="footer__phone" href="tel:+7907288365">
-                                <span class="footer__phone-text">
-                                    Горячая линия
-                                </span>
-                                +7 907 288 365
-                            </a>
+                        <a class="footer__phone" href="tel:+7907288365">
+                            <span class="footer__phone-text">
+                                Горячая линия
+                            </span>
+                            +7 907 288 365
+                        </a>
 
                         <a class="footer__address" href="#">Санкт-Петербург, ул. Ленина, 1</a>
 
