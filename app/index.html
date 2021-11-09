@@ -16,6 +16,13 @@
         <div class="header__top">
             <div class="container">
                 <nav class="header__inner">
+                    <button class="mobile-menu__btn">
+                        <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="1" x2="30" y2="1" stroke="white" stroke-width="2" />
+                            <line y1="11" x2="30" y2="11" stroke="white" stroke-width="2" />
+                            <line y1="21" x2="30" y2="21" stroke="white" stroke-width="2" />
+                        </svg>
+                    </button>
                     <ul class="header__contacts">
                         <li class="header__contacts-list">
                             <a class="header__address" href="#">
@@ -37,7 +44,10 @@
                                         d="M26.8764 11.6357H25.9048C25.624 11.6357 25.3967 11.863 25.3967 12.1438V15.6992C25.3967 15.98 25.624 16.2073 25.9048 16.2073H29.3233C29.6419 16.2073 29.927 16.0425 30.0868 15.7673C30.2467 15.492 30.247 15.1624 30.0895 14.8878L28.9033 12.8117C28.4892 12.0868 27.7123 11.6357 26.8764 11.6357ZM26.4128 15.1915V12.6518H26.8764C27.3487 12.6518 27.7873 12.9062 28.0212 13.316L29.0928 15.1915H26.4128Z"
                                         fill="white" />
                                 </svg>
-                                Адрес и время доставки
+                                <span>
+                                    Адрес и время доставки
+                                </span>
+
                             </a>
                         </li>
                         <li class="header__contacts-list">
@@ -54,7 +64,10 @@
                                         d="M12.7476 6.30376C13.3847 6.37717 14.2666 6.84981 14.8443 7.42749C15.4269 8.0102 15.9004 8.90045 15.9702 9.5445C16.0083 9.89592 16.3054 10.1563 16.651 10.1563C16.6757 10.1563 16.7006 10.1549 16.7257 10.1523C17.1021 10.1114 17.3743 9.77314 17.3334 9.39667C17.2142 8.29708 16.4842 7.12827 15.8138 6.4578C15.1493 5.79327 13.992 5.06676 12.9043 4.94142C12.5278 4.89763 12.1881 5.16796 12.1447 5.54406C12.1015 5.92025 12.3714 6.26042 12.7476 6.30376Z"
                                         fill="white" />
                                 </svg>
-                                Горячая линия 24/7</a>
+                                <span>
+                                    Горячая линия 24/7
+                                </span>
+                            </a>
                         </li>
                     </ul>
                     <ul class="header__info">
@@ -74,11 +87,14 @@
         <div class="header__bottom">
             <div class="container">
                 <nav class="header__bottom-inner">
+                    <a class="logo header__logo-short" href="#">
+                        <img class="logo__img" src="images/icons/logo-short.svg" alt="Логотип" width="37" height="40">
+                    </a>
                     <a class="logo header__logo" href="#">
                         <img class="logo__img" src="images/logo.svg" alt="Логотип" width="200" height="60">
                     </a>
                     <div class="header__catalog">
-                        <button class="header__catalog-btn" type="button">Каталог продуктов</button>
+                        <button class="header__catalog-btn" type="button">Каталог <span>продуктов</span> </button>
                         <ul class="header__catalog-menu">
                             <li class="header__catalog-list">Овощи и фрукты</li>
                             <li class="header__catalog-list">Бакалея</li>
@@ -139,7 +155,7 @@
                                 <span class="header__num">12</span>
                             </button>
 
-                            
+
                         </div>
                     </div>
                 </nav>
@@ -154,9 +170,11 @@
                 </div>
                 <button class="cart-window__close-btn">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.4069 12.0066L23.6947 1.7188C24.0917 1.33532 24.1028 0.702587 23.7193 0.305521C23.3358 -0.0915446 22.7031 -0.102555 22.306 0.280924C22.2977 0.288948 22.2895 0.297147 22.2814 0.305521L11.9935 10.5933L1.70569 0.305463C1.30863 -0.0780163 0.675896 -0.0670062 0.292417 0.33006C-0.0816925 0.717404 -0.0816925 1.33145 0.292417 1.7188L10.5802 12.0066L0.292417 22.2944C-0.0977977 22.6847 -0.0977977 23.3174 0.292417 23.7077C0.68269 24.0979 1.31542 24.0979 1.70569 23.7077L11.9935 13.4199L22.2813 23.7077C22.6784 24.0912 23.3111 24.0802 23.6946 23.6831C24.0687 23.2958 24.0687 22.6817 23.6946 22.2944L13.4069 12.0066Z" fill="#31352B"/>
-                        </svg>
-                        
+                        <path
+                            d="M13.4069 12.0066L23.6947 1.7188C24.0917 1.33532 24.1028 0.702587 23.7193 0.305521C23.3358 -0.0915446 22.7031 -0.102555 22.306 0.280924C22.2977 0.288948 22.2895 0.297147 22.2814 0.305521L11.9935 10.5933L1.70569 0.305463C1.30863 -0.0780163 0.675896 -0.0670062 0.292417 0.33006C-0.0816925 0.717404 -0.0816925 1.33145 0.292417 1.7188L10.5802 12.0066L0.292417 22.2944C-0.0977977 22.6847 -0.0977977 23.3174 0.292417 23.7077C0.68269 24.0979 1.31542 24.0979 1.70569 23.7077L11.9935 13.4199L22.2813 23.7077C22.6784 24.0912 23.3111 24.0802 23.6946 23.6831C24.0687 23.2958 24.0687 22.6817 23.6946 22.2944L13.4069 12.0066Z"
+                            fill="#31352B" />
+                    </svg>
+
                 </button>
             </div>
             <div class="cart-window__content">
@@ -166,7 +184,7 @@
                             <img class="cart-window__img" src="images/cart/pineapple.jpg" alt="Ананас">
                             <div class="cart-window__text">
                                 <h3 class="cart-window__title">Ананас, 1кг</h3>
-                                <p class="cart-window__price">999<span>₽</span>  </p>
+                                <p class="cart-window__price">999<span>₽</span> </p>
                             </div>
                         </div>
                         <div class="cart-window__item-price">
@@ -179,7 +197,7 @@
                             <img class="cart-window__img" src="images/cart/pineapple.jpg" alt="Ананас">
                             <div class="cart-window__text">
                                 <h3 class="cart-window__title">Ананас, 1кг</h3>
-                                <p class="cart-window__price">999<span>₽</span>  </p>
+                                <p class="cart-window__price">999<span>₽</span> </p>
                             </div>
                         </div>
                         <div class="cart-window__item-price">
@@ -198,6 +216,131 @@
                 </div>
                 <div class="cart-window__bottom-btn" type="submit">Оформить заказ</div>
             </div>
+        </div>
+        <div class="mobile-window">
+            <div class="mobile-window__top">
+                <a class="mobile-window__logo" href="#">
+                    <img src="images/icons/logo-mobile.svg" alt="logo" >
+                </a>
+                <button class="mobile-window__close">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.4069 12.0066L23.6947 1.7188C24.0917 1.33532 24.1028 0.702587 23.7193 0.305521C23.3358 -0.0915446 22.7031 -0.102555 22.306 0.280924C22.2977 0.288948 22.2895 0.297147 22.2814 0.305521L11.9935 10.5933L1.70569 0.305463C1.30863 -0.0780163 0.675896 -0.0670062 0.292417 0.33006C-0.0816925 0.717404 -0.0816925 1.33145 0.292417 1.7188L10.5802 12.0066L0.292417 22.2944C-0.0977977 22.6847 -0.0977977 23.3174 0.292417 23.7077C0.68269 24.0979 1.31542 24.0979 1.70569 23.7077L11.9935 13.4199L22.2813 23.7077C22.6784 24.0912 23.3111 24.0802 23.6946 23.6831C24.0687 23.2958 24.0687 22.6817 23.6946 22.2944L13.4069 12.0066Z" fill="#31352B"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="mobile-window__auth">
+                <a class="mobile-window__log-in" href="#">Вход</a>
+                <a class="mobile-window__register" href="#">Регистрация</a>
+            </div>
+            <div class="mobile-window__catalog">
+                <a class="mobile-window__catalog-link" href="#">Каталог товаров</a>
+            </div>
+            <div class="mobile-window__contacts">
+                <a class="mobile-window__tel" href="tel:+7907288365">+7 907 288 365</a>
+                <a class="mobile-window__address" href="#">Санкт-Петербург, ул. Ленина, 1</a>
+                <ul class="mobile-window__social">
+                    <li class="mobile-window__social-list">
+                        <a class="mobile-window__social-link" href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="#31352B"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M21.3293 5.31333H24.2507V0.225333C23.7467 0.156 22.0133 0 19.9947 0C15.7827 0 12.8973 2.64933 12.8973 7.51867V12H8.24933V17.688H12.8973V32H18.596V17.6893H23.056L23.764 12.0013H18.5947V8.08267C18.596 6.43867 19.0387 5.31333 21.3293 5.31333Z"
+                                        fill="#31352B" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="32" height="32" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-window__social-list">
+                        <a class="mobile-window__social-link" href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="#31352B"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M31.292 7.90543L31.332 8.16677C30.9453 6.79477 29.9013 5.7361 28.5747 5.35077L28.5467 5.3441C26.052 4.66677 16.0133 4.66677 16.0133 4.66677C16.0133 4.66677 6 4.65343 3.48 5.3441C2.128 5.7361 1.08266 6.79477 0.702662 8.13877L0.695996 8.16677C-0.236004 13.0348 -0.242671 18.8841 0.737329 24.0961L0.695996 23.8321C1.08266 25.2041 2.12666 26.2628 3.45333 26.6481L3.48133 26.6548C5.97333 27.3334 16.0147 27.3334 16.0147 27.3334C16.0147 27.3334 26.0267 27.3334 28.548 26.6548C29.9013 26.2628 30.9467 25.2041 31.3267 23.8601L31.3333 23.8321C31.7573 21.5681 32 18.9628 32 16.3014C32 16.2041 32 16.1054 31.9987 16.0068C32 15.9161 32 15.8081 32 15.7001C32 13.0374 31.7573 10.4321 31.292 7.90543ZM12.8107 20.8681V11.1441L21.1653 16.0134L12.8107 20.8681Z"
+                                        fill="#31352B" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="32" height="32" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-window__social-list">
+                        <a class="mobile-window__social-link" href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="#31352B"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M12.556 20.2414L12.0267 27.6867C12.784 27.6867 13.112 27.3614 13.5053 26.9707L17.056 23.5774L24.4133 28.9654C25.7626 29.7174 26.7133 29.3214 27.0773 27.724L31.9066 5.09471L31.908 5.09338C32.336 3.09871 31.1866 2.31871 29.872 2.80804L1.48533 13.676C-0.452007 14.428 -0.422674 15.508 1.15599 15.9974L8.41332 18.2547L25.2706 7.70671C26.064 7.18138 26.7853 7.47204 26.192 7.99738L12.556 20.2414Z"
+                                        fill="#31352B" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="32" height="32" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-window__social-list">
+                        <a class="mobile-window__social-link" href="#">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="#31352B"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M16.0053 7.78404C11.468 7.78404 7.79468 11.4614 7.79468 15.9947C7.79468 20.532 11.472 24.2054 16.0053 24.2054C20.5427 24.2054 24.216 20.528 24.216 15.9947C24.216 11.4574 20.5387 7.78404 16.0053 7.78404ZM16.0053 21.324C13.06 21.324 10.676 18.9387 10.676 15.9947C10.676 13.0507 13.0613 10.6654 16.0053 10.6654C18.9493 10.6654 21.3347 13.0507 21.3347 15.9947C21.336 18.9387 18.9507 21.324 16.0053 21.324Z"
+                                        fill="#31352B" />
+                                    <path
+                                        d="M22.5973 0.101233C19.6533 -0.0361006 12.3613 -0.029434 9.41467 0.101233C6.82533 0.222566 4.54133 0.847899 2.7 2.68923C-0.377336 5.76657 0.0159978 9.91323 0.0159978 15.9946C0.0159978 22.2186 -0.330669 26.2692 2.7 29.2999C5.78933 32.3879 9.996 31.9839 16.0053 31.9839C22.1707 31.9839 24.2987 31.9879 26.4787 31.1439C29.4427 29.9932 31.68 27.3439 31.8987 22.5852C32.0373 19.6399 32.0293 12.3492 31.8987 9.40257C31.6347 3.78523 28.62 0.378566 22.5973 0.101233ZM27.2573 27.2639C25.24 29.2812 22.4413 29.1012 15.9667 29.1012C9.3 29.1012 6.62666 29.1999 4.676 27.2439C2.42933 25.0079 2.836 21.4172 2.836 15.9732C2.836 8.60657 2.08 3.30123 9.47333 2.92257C11.172 2.86257 11.672 2.84257 15.948 2.84257L16.008 2.88257C23.1133 2.88257 28.688 2.13857 29.0227 9.53057C29.0987 11.2172 29.116 11.7239 29.116 15.9932C29.1147 22.5826 29.24 25.2719 27.2573 27.2639Z"
+                                        fill="#31352B" />
+                                    <path
+                                        d="M24.5413 9.37862C25.601 9.37862 26.46 8.5196 26.46 7.45995C26.46 6.4003 25.601 5.54129 24.5413 5.54129C23.4817 5.54129 22.6227 6.4003 22.6227 7.45995C22.6227 8.5196 23.4817 9.37862 24.5413 9.37862Z"
+                                        fill="#31352B" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="32" height="32" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="mobile-window__list">
+                <li class="mobile-window__list-item">
+                    <a class="mobile-window__link" href="#">Доставка</a>
+                </li>
+                <li class="mobile-window__list-item">
+                    <a class="mobile-window__link" href="#">О Нас</a>
+                </li>
+                <li class="mobile-window__list-item">
+                    <a class="mobile-window__link" href="#">Новости</a>
+                </li>
+                <li class="mobile-window__list-item">
+                    <a class="mobile-window__link" href="#">Контакты</a>
+                </li>
+                <li class="mobile-window__list-item">
+                    <a class="mobile-window__link" href="#">Акции</a>
+                </li>
+                <li class="mobile-window__list-item">
+                    <a class="mobile-window__link" href="#">Вакансии</a>
+                </li>
+                <li class="mobile-window__list-item">
+                    <a class="mobile-window__link" href="#">Отзывы</a>
+                </li>
+                <li class="mobile-window__list-item">
+                    <a class="mobile-window__link" href="#">Публичная оферта</a>
+                </li>
+            </ul>
         </div>
 
     </header>
@@ -1591,6 +1734,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/main.min.js"></script>
+
 </body>
 
 

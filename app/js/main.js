@@ -1,26 +1,26 @@
 $(function () {
 
-    let my_range_price = $(".filter-price__input").data("ionRangeSlider");
-    const input__from = document.querySelector('input[name=from]');
-    input__from.onchange = (e) => {
-        const {
-            value
-        } = e.target;
-        console.log(value);
-        my_range_price.update({
-            from: value
-        });
-    };
-    const input__to = document.querySelector('input[name=to]');
-    input__to.onchange = (e) => {
-        const {
-            value
-        } = e.target;
-        console.log(value);
-        my_range_price.update({
-            to: value
-        });
-    };
+    // let my_range_price = $(".filter-price__input").data("ionRangeSlider");
+    // const input__from = document.querySelector('input[name=from]');
+    // input__from.onchange = (e) => {
+    //     const {
+    //         value
+    //     } = e.target;
+    //     console.log(value);
+    //     my_range_price.update({
+    //         from: value
+    //     });
+    // };
+    // const input__to = document.querySelector('input[name=to]');
+    // input__to.onchange = (e) => {
+    //     const {
+    //         value
+    //     } = e.target;
+    //     console.log(value);
+    //     my_range_price.update({
+    //         to: value
+    //     });
+    // };
 
     $('.filter-price__input').ionRangeSlider({
         type: "double",
@@ -41,9 +41,23 @@ $(function () {
         arrows: true
     });
 
+    $(document).on('click', '.catalog-content__btn--small', function () {
+        $('.top-products__content').addClass('top-products__content--small');
+      });
+    
+      $(document).on('click', '.catalog-content__btn--big', function () {
+        $('.top-products__content').removeClass('top-products__content--small');
+      });
+
     $('.header__cart-btn, .cart-window__close-btn').on('click', function () {
 
         $('.cart-window').toggleClass('active');
+        $('.bg-black').toggleClass('active');
+    });
+
+    $('.mobile-menu__btn, .mobile-window__close').on('click', function () {
+
+        $('.mobile-window').toggleClass('active');
         $('.bg-black').toggleClass('active');
     });
 
